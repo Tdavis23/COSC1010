@@ -6,6 +6,9 @@
 #
 # Use comments liberally throughout the program. 
 
-ogdistance = int(input("enter distance in kilometers: "))
-convertedDistance = ogdistance * 0.6214
-print( convertedDistance)
+def KilometerConverter(kilometers):
+    miles = float(kilometers) * 0.6214
+    print("{:,.2f}".format(miles) + " this is how many miles are in " + "{:,.2f}".format(kilometers) + " kilometers.")
+
+kilometerInput = int(input("what is the distance in kilometers? "))
+KilometerConverter(kilometerInput)
